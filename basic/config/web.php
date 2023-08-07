@@ -59,7 +59,7 @@ $config = [
             'class' => 'app\components\TestComponent'
         ],
     ],
-
+ 
 
 ];
 
