@@ -9,7 +9,7 @@ $config = [
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'components' => [
         'request' => [
@@ -50,8 +50,17 @@ $config = [
             ],
         ],
         */
+
+        'assetManager' => [
+            'class' => 'app\components\AssetManager'
+        ],
+
+        'test' => [
+            'class' => 'app\components\TestComponent'
+        ],
     ],
-    'params' => $params,
+
+
 ];
 
 if (YII_ENV_DEV) {
