@@ -4,7 +4,7 @@ namespace app\models;
 
 use yii\base\Model;
 
-class TestModel extends  Model
+class TestModel extends Model
 {
     public $name;
     public $surname;
@@ -16,14 +16,15 @@ class TestModel extends  Model
     {
         return [
             'name' => 'Enter your name',
-        'age' =>'your age'
-    ];
-}
-
-
-    public function rules(){
-        return [
-            ['name','required']
+            'age' => 'your age'
         ];
+    }
+
+
+    public function rules()
+    {
+        return [
+            [['name', 'surname'], 'required', 'message' => "Please enter your name"]
+            ];
     }
 }
