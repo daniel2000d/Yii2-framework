@@ -58,8 +58,17 @@ $config = [
         'test' => [
             'class' => 'app\components\TestComponent'
         ],
+
     ],
- 
+
+
+//    'params' => $params;
+//'on beforeAction'=>function () {
+//    echo Yii::$app->view->render('about');
+//
+//}
+
+
 
 ];
 

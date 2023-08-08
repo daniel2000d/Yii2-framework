@@ -8,7 +8,11 @@ class PageController extends Controller
 {
     public function actionAbout()
     {
-        return $this->render("about");
+        $this->view->params['sharedVariable']='I am shared';
+        return $this->render('about', [
+            'a' => 1,
+            'b' => 2
+        ]);
     }
 
 }
