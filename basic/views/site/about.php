@@ -16,3 +16,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <code><?= __FILE__ ?></code>
 </div>
+<?php $this->beginBlock("sidebar")?>
+<div>
+    Content from about page
+</div>
+<?php $this->endBlock()?>
